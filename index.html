@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mein Persönlicher Tisch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Mein Tisch</div>
+        <div class="menu-toggle" id="menu-toggle"></div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Startseite</a></li>
+            <li><a href="projekt.html">Projekt</a></li>
+            <li><a href="ueber-uns.html">Über uns</a></li>
+            <li><a href="shop.html">Shop</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Mein Persönlicher Tisch</h1>
+    </header>
+
+    <section class="hero">
+        <img src="tisch-placeholder.jpg" alt="Schöner Holztisch" class="hero-image">
+        <h2>Ein Tisch. Euer Moment. Von Hand gemacht.</h2>
+        <a href="projekt.html" class="button">Mehr erfahren</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Mein Persönlicher Tisch</p>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('menu-toggle');
+        const navLinks = document.getElementById('nav-links');
+
+        toggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            toggle.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
